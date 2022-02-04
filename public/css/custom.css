@@ -1,0 +1,76 @@
+.firstsection{
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 30px;
+}
+.h1bankname{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.bank{
+    font-size: 40px;
+    font-weight: bolder;
+    color:cornsilk;
+    text-transform: capitalize;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.banks{
+    font-size: 40px;
+    font-weight: bolder;
+    color:cornsilk;
+    text-transform: capitalize;
+}
+.servicelogin button{
+    border: 0px;
+    border-radius: 5px 10px 8px 0px;
+}
+.abountsection{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.about p{
+    font-size: 18px;
+
+}
+.secondabout{
+    padding-top: 20px;
+}
+.quicstart h1{
+    font-size: 20px;
+}
+.notice{
+    text-align: center;
+    height: 200px;
+    background-color: cadetblue;
+    padding-top: 50px;
+}
+.notice2{
+    padding-top: 20px;
+}
+.notice2 h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sidebar li{
+    box-shadow: 10px 8px 5px;
+    text-align: center;
+    background-color: blue;
+    margin-top: 10px;
+}
+.sidebar li a{
+    color: white;
+}
+.sidebar li a:hover{
+    color: white;
+}
