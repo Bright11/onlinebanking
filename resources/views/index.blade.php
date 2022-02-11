@@ -4,9 +4,16 @@
 <div class="container-fluid">
 <div class="welcomsection"style=" background-image:url('{{asset('staticimg/hero-bg.png')}}')">
    <section class="firstsection">
+
     <div class="row">
         <div class="col-md-6">
-            <h1 class="h1bankname">Welcome to the</h1>
+            <h1 class="h1bankname">
+            @if (Session::has('user'))
+
+       {{Session::get('user.fullname')}}
+   @endif
+   Welcome to the</h1>
+
             <h1 class="bank">New International bank</h1>
             <h1 class="banks">Service</h1>
             <section class="servicelogin">
@@ -44,7 +51,7 @@
 <div class="row">
     <div class="col-md-6">
         <p> For New International Bank, the interests of the common man have always remained at the core of its business.With a customer-centric approach, the Bank has designed products and services to meet the expectations of
-             the financial life cycle of its valued client. Keeping pace with the transforming landscape of the US economy, New International Bank has broadened its digital base in the recent years. 
+             the financial life cycle of its valued client. Keeping pace with the transforming landscape of the US economy, New International Bank has broadened its digital base in the recent years.
         </p>
         <div class="quicstart">
             <h1>Quic start with us</h1>
@@ -79,8 +86,8 @@
     <div class="col-md-4">
         <h1>Current Account</h1>
         <p>current account offers a convenient means by which you can manage your day-to-day finances.
-             This account enables you to carry out your regular payments and deposits transactions while 
-             at the same time enjoying access 
+             This account enables you to carry out your regular payments and deposits transactions while
+             at the same time enjoying access
             to your money at any time.</p>
     </div>
 

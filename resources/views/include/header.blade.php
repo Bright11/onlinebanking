@@ -7,9 +7,9 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="/"></a>
           </li>
-          
+
           @if (Session::has('user'))
           <li class="nav-item">
             <a class="nav-link" href="{{route('prodetail')}}">Profile</a>
@@ -26,18 +26,26 @@
           </li>
           @endif
           <!--admin links-->
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('registeredusers')}}">Users</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('customers')}}">Customers</a>
-          </li>
+          @if (Session::has('user'))
+          @if (Session::get('user.role_as')==1){
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('home')}}">Admin Home</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('registeredusers')}}">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('customers')}}">Customers</a>
+              </li>
+          }
+
+          @endif
+
+          @endif
+
           <!--the end-->
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
   </nav>

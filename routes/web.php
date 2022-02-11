@@ -19,6 +19,10 @@ Route::get('logout',[registerCountroller::class,'logout'])->name('logout');
 
 
 //openning account
+
+//Route::get('home',[customerController::class,'home'])->name('home')->middleware('admin');
+Route::get('home',[customerController::class,'home'])->name('home');
+
 Route::get('openaccount/{id}',[customerController::class,'openaccount'])->name('openaccount');
 Route::post('/addopenaccount/{id}',[customerController::class,'addopenaccount'])->name('addopenaccount');
 Route::get('transfer/{user_id}',[customerController::class,'transfer'])->name('transfer');

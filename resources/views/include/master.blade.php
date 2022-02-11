@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="{{asset('css/admincss.css')}}">
 </head>
 <body>
    @include('include.header')
